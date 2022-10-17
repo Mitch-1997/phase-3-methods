@@ -16,8 +16,8 @@
  end
 
  def halve number
-    unless number.is_a? Integer
+    if number.class != Integer
         return nil
     end
-     number/2
+     return number/2
 end
